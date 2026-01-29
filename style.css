@@ -353,6 +353,13 @@ section {
     margin-bottom: var(--spacing-sm);
 }
 
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -368,6 +375,19 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-green);
+}
+
+.service-card,
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.service-card.visible,
+.testimonial-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Footer */

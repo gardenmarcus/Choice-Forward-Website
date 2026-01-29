@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
+            const isExpanded = navLinks.classList.toggle('active');
             this.classList.toggle('active');
+            this.setAttribute('aria-expanded', isExpanded);
         });
     }
 
@@ -23,9 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 
                 // Close mobile menu if open
-                if (navLinks.classList.contains('active')) {
+                if (mobileMenuToggle && navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     mobileMenuToggle.classList.remove('active');
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
                 }
             }
         });
@@ -36,8 +38,25 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Create success message element
+            const existingMessage = this.querySelector('.success-message');
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+            
+            const successMessage = document.createElement('div');
+            successMessage.className = 'success-message';
+            successMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+            successMessage.style.cssText = 'background-color: #d4edda; color: #155724; padding: 1rem; border-radius: 8px; margin-top: 1rem; border: 1px solid #c3e6cb;';
+            
+            this.appendChild(successMessage);
             this.reset();
+            
+            // Remove message after 5 seconds
+            setTimeout(() => {
+                successMessage.remove();
+            }, 5000);
         });
     }
 
@@ -50,17 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
             }
         });
     }, observerOptions);
 
     // Observe service cards and testimonials
     document.querySelectorAll('.service-card, .testimonial-card').forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
 });

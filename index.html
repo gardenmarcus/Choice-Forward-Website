@@ -22,7 +22,7 @@
                     <li><a href="#press">Press</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="image-placeholder">
-                        <p>Garden Marcus</p>
+                        <p>Choice Forward</p>
                     </div>
                 </div>
             </div>
@@ -53,9 +53,9 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Garden Marcus</h2>
+            <h2 class="section-title">About Choice Forward</h2>
             <div class="about-content">
-                <p>Garden Marcus is a motivational speaker, plant educator, and personal growth advocate dedicated to helping individuals and teams flourish. Through the power of nature-inspired wisdom and practical strategies, Marcus guides people toward meaningful transformation and sustainable growth.</p>
+                <p>Choice Forward is dedicated to helping individuals and teams flourish through motivational speaking, personal growth workshops, and transformative experiences. Through the power of nature-inspired wisdom and practical strategies, we guide people toward meaningful transformation and sustainable growth.</p>
             </div>
         </div>
     </section>
@@ -115,7 +115,7 @@
         <div class="container">
             <h2 class="section-title">As Seen In</h2>
             <div class="press-content">
-                <p class="press-description">Garden Marcus has been featured across various media platforms, sharing insights on personal growth, motivation, and the power of nature-inspired living.</p>
+                <p class="press-description">Choice Forward has been featured across various media platforms, sharing insights on personal growth, motivation, and the power of nature-inspired living.</p>
                 <div class="media-logos">
                     <div class="media-item">TikTok Featured Creator</div>
                     <div class="media-item">Motivational Speaker Network</div>
@@ -142,13 +142,16 @@
                 <div class="contact-form">
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -175,7 +178,7 @@
                 </div>
                 <div class="footer-section">
                     <h4>Connect</h4>
-                    <p>Follow Garden Marcus on social media</p>
+                    <p>Follow Choice Forward on social media</p>
                 </div>
             </div>
             <div class="footer-bottom">
