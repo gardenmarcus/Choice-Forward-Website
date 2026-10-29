@@ -63,7 +63,6 @@ function writeSpeakingRow_(spreadsheet, data) {
     data.audienceOutcome || '',
     data.budgetTier || '',
     data.travelCovered || '',
-    data.decisionTimeline || '',
     data.leadSource || ''
   ]);
 }
@@ -91,7 +90,6 @@ function ensureSpeakingHeader_(sheet) {
       'Audience Outcome',
       'Budget Tier',
       'Travel Covered',
-      'Decision Timeline',
       'Lead Source'
     ]);
   }

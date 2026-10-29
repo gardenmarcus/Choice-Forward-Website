@@ -56,5 +56,5 @@ This project now uses a Google Apps Script webhook instead of Node.
 
 ## Notes
 
-- The temporary Node backend folder can be ignored for now.
 - Current form code posts with `fetch(..., { mode: 'no-cors' })`, which is normal for Apps Script webhooks.
+- After setting the webhook URL, test both forms locally first, then test again on your Vercel domain.
