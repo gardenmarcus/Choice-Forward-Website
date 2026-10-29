@@ -458,27 +458,6 @@
     .quote cite { font-style: normal; font-size: .85rem; color: var(--muted); }
     .testimonials-note { margin-top: 10px; font-size: .82rem; color: var(--muted); }
 
-    /* ---------- SPEAKING SAMPLE ---------- */
-    .sample { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .sample-shell {
-      margin-top: 28px;
-      background: var(--cream);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 18px;
-    }
-    .sample-shell video {
-      width: 100%;
-      border-radius: 10px;
-      background: #000;
-      display: block;
-    }
-    .sample-note {
-      margin-top: 10px;
-      font-size: .88rem;
-      color: var(--muted);
-    }
-
     /* ---------- BOOKING FORM ---------- */
     .book { background: var(--leaf-dark); color: var(--cream); }
     .book .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
@@ -754,22 +733,6 @@
     </div>
   </section>
 
-  <!-- ===================== SPEAKING SAMPLE ===================== -->
-  <section class="sample" id="sample">
-    <div class="wrap">
-      <p class="eyebrow">Speaking sample</p>
-      <h2>See Marcus in action</h2>
-      <p class="lede">A short clip from a live speaking session.</p>
-      <div class="sample-shell">
-        <video id="speakingSampleVideo" controls preload="metadata" playsinline>
-          <source src="assets/videos/val-short-speaking-clip-v2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p class="sample-note">Clip length: 18 seconds.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ===================== TOPICS ===================== -->
   <section id="topics" class="topics">
     <div class="wrap">
@@ -916,22 +879,16 @@
     (function () {
       const slides = Array.from(document.querySelectorAll('.hero-slide'));
       const dots = Array.from(document.querySelectorAll('.hero-dot'));
-      if (slides.length && dots.length) {
-        const showSlide = (index) => {
-          slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
-          dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-        };
+      if (!slides.length || !dots.length) return;
 
-        dots.forEach((dot, index) => {
-          dot.addEventListener('click', () => showSlide(index));
-        });
-      }
+      const showSlide = (index) => {
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+      };
 
-      const video = document.getElementById('speakingSampleVideo');
-      if (video) {
-        video.muted = false;
-        if (video.volume === 0) video.volume = 1;
-      }
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => showSlide(index));
+      });
     })();
   </script>
 
