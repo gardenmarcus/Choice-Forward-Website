@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Marcus to Speak | Choice Forward</title>
+  <meta name="description" content="Speaking inquiry form for keynotes, workshops, and events with Marcus Bridgewater." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --forest: #1f2937;
+      --forest-2: #2563eb;
+      --moss: #22c55e;
+      --leaf-dark: #166534;
+      --leaf-soft: #ecfdf3;
+      --cream: #f9fafb;
+      --paper: #ffffff;
+      --clay: #dc2626;
+      --clay-dark: #b91c1c;
+      --ink: #111827;
+      --muted: #4b5563;
+      --line: #e5e7eb;
+      --radius: 14px;
+      --max: 980px;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Inter", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--sans); background: var(--cream); color: var(--ink); line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(247, 242, 232, .92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav .wrap { height: 68px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: var(--serif); font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--forest); }
+    .logo span { color: var(--clay); }
+    .nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
+    .nav a { text-decoration: none; color: var(--muted); font-size: .95rem; }
+    .nav a.active { color: var(--forest); font-weight: 600; }
+    .btn {
+      display: inline-block; padding: 12px 20px; border-radius: 999px; text-decoration: none;
+      font-weight: 600; border: 2px solid transparent; cursor: pointer; font: inherit;
+    }
+    .btn-primary { background: var(--clay); color: #fff; }
+    .btn-primary:hover { background: var(--clay-dark); }
+    .btn-ghost { border-color: currentColor; background: transparent; }
+
+    .hero { background: var(--forest); color: var(--cream); padding: 56px 0; }
+    .hero h1 { font-family: var(--serif); font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.15; margin-bottom: 12px; }
+    .hero p { color: #dbeafe; max-width: 760px; }
+    .eyebrow { color: #86efac; text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; font-weight: 600; margin-bottom: 10px; }
+
+    main { padding: 42px 0 80px; }
+    .form-shell { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+    .section { border-top: 1px solid var(--line); padding-top: 24px; margin-top: 24px; }
+    .section:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+    .section h2 { font-family: var(--serif); font-size: 1.4rem; color: var(--forest); margin-bottom: 4px; }
+    .section p { color: var(--muted); margin-bottom: 16px; font-size: .95rem; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .full { grid-column: 1 / -1; }
+    label { font-size: .85rem; font-weight: 600; }
+    input, select, textarea {
+      font: inherit; font-size: .95rem; padding: 12px 14px; border-radius: 10px;
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
+    }
+    input:focus, select:focus, textarea:focus { outline: 2px solid #86efac; border-color: #22c55e; }
+    textarea { min-height: 108px; resize: vertical; }
+    .choices { display: flex; flex-wrap: wrap; gap: 12px 16px; padding-top: 6px; }
+    .choices label { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: .93rem; }
+    .hint { color: var(--muted); font-size: .85rem; }
+    .error { color: #b91c1c; font-size: .83rem; min-height: 1.1em; }
+    .hidden { display: none !important; }
+
+    .actions { margin-top: 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .confirmation {
+      margin-top: 18px;
+      background: var(--leaf-soft);
+      border: 1px solid #bbf7d0;
+      color: var(--leaf-dark);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: .95rem;
+    }
+    .confirmation.error {
+      background: #fef2f2;
+      border-color: #fecaca;
+      color: #991b1b;
+    }
+
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .nav ul li:nth-child(-n+2) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo">Choice<span>Forward</span></a>
+      <ul>
+        <li><a href="index.html#offers">Ways to book</a></li>
+        <li><a href="index.html#topics">Topics</a></li>
+        <li><a href="book.html" class="active">Speaking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Speaking intake</p>
+      <h1>Book Marcus to Speak</h1>
+      <p>For keynotes, workshops, panels, and event sessions. Share the essentials and we’ll follow up with availability and next steps.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <form class="form-shell" id="speakingForm" action="#" method="post" novalidate>
+        <input type="hidden" name="inquiry_type" value="speaking" />
+
+        <section class="section">
+          <h2>About you</h2>
+          <p>Who’s making the inquiry?</p>
+          <div class="grid">
+            <div class="field">
+              <label for="fullName">Full name *</label>
+              <input id="fullName" name="full_name" type="text" required />
+              <p class="error" id="err-fullName"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" required />
+              <p class="error" id="err-email"></p>
+            </div>
+            <div class="field">
+              <label for="organization">Organization</label>
+              <input id="organization" name="organization" type="text" />
+            </div>
+            <div class="field">
+              <label for="role">Your role</label>
+              <input id="role" name="role" type="text" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>The event</h2>
+          <p>Tell us about the event and audience.</p>
+          <div class="grid">
+            <div class="field">
+              <label for="eventType">Type of event</label>
+              <select id="eventType" name="event_type">
+                <option value="">Select one</option>
+                <option>Keynote</option>
+                <option>Workshop</option>
+                <option>Panel</option>
+                <option>Corporate retreat or offsite</option>
+                <option>Conference breakout</option>
+                <option>School or education</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="eventDate">Event date *</label>
+              <input id="eventDate" name="event_date" type="date" />
+              <label class="hint"><input id="datesFlexible" name="dates_flexible" type="checkbox" /> Our dates are flexible.</label>
+              <p class="error" id="err-eventDate"></p>
+            </div>
+
+            <fieldset class="field full" style="border:0; padding:0; margin:0;">
+              <legend style="font-size:.85rem; font-weight:600;">Format *</legend>
+              <div class="choices">
+                <label><input type="radio" name="format" value="In person" required /> In person</label>
+                <label><input type="radio" name="format" value="Virtual" /> Virtual</label>
+                <label><input type="radio" name="format" value="Hybrid" /> Hybrid</label>
+              </div>
+              <p class="error" id="err-format"></p>
+            </fieldset>
+
+            <div class="field full hidden" id="locationField">
+              <label for="location">Location</label>
+              <input id="location" name="location" type="text" placeholder="City, state, or country" />
+            </div>
+
+            <div class="field">
+              <label for="audienceSize">Audience size</label>
+              <select id="audienceSize" name="audience_size">
+                <option value="">Select one</option>
+                <option>Under 50</option>
+                <option>50–200</option>
+                <option>200–500</option>
+                <option>500–1,000</option>
+                <option>1,000+</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="outcome">Additional notes</label>
+              <textarea id="outcome" name="audience_outcome"></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Budget and logistics</h2>
+          <p>Budget ranges help us route your request quickly.</p>
+          <div class="grid">
+            <div class="field">
+              <label for="budget">Speaking budget *</label>
+              <select id="budget" name="budget_tier" required>
+                <option value="">Select one</option>
+                <option>Under $2000</option>
+                <option>$2000–$5000</option>
+                <option>$5000+</option>
+              </select>
+              <p class="error" id="err-budget"></p>
+            </div>
+
+            <fieldset class="field" id="travelField" style="border:0; padding:0; margin:0;">
+              <legend style="font-size:.85rem; font-weight:600;">Are travel and lodging covered?</legend>
+              <div class="choices" style="padding-top:0;">
+                <label><input type="radio" name="travel_covered" value="Yes" /> Yes</label>
+                <label><input type="radio" name="travel_covered" value="No" /> No</label>
+                <label><input type="radio" name="travel_covered" value="Not sure yet" /> Not sure yet</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="source">How did you hear about Marcus?</label>
+              <select id="source" name="lead_source">
+                <option value="">Select one</option>
+                <option>Instagram</option>
+                <option>TikTok</option>
+                <option>Substack</option>
+                <option>Saw him speak</option>
+                <option>Referral</option>
+                <option>Press</option>
+                <option>Search</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Send speaking inquiry</button>
+          <a href="contact.html" class="btn btn-ghost">Need general contact instead?</a>
+        </div>
+        <p id="confirmation" class="confirmation hidden">Thanks for reaching out about having Marcus speak. We review every request and reply within 3 business days.</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script>
+    (function () {
+      const APPS_SCRIPT_WEBHOOK_URL = (window.CF_CONFIG && window.CF_CONFIG.APPS_SCRIPT_WEBHOOK_URL) || '';
+      const form = document.getElementById('speakingForm');
+      const dateInput = document.getElementById('eventDate');
+      const flexCheckbox = document.getElementById('datesFlexible');
+      const formatRadios = Array.from(document.querySelectorAll('input[name="format"]'));
+      const locationField = document.getElementById('locationField');
+      const locationInput = document.getElementById('location');
+      const travelField = document.getElementById('travelField');
+      const budgetInput = document.getElementById('budget');
+      const confirmation = document.getElementById('confirmation');
+
+      const errors = {
+        fullName: document.getElementById('err-fullName'),
+        email: document.getElementById('err-email'),
+        eventDate: document.getElementById('err-eventDate'),
+        format: document.getElementById('err-format'),
+        budget: document.getElementById('err-budget')
+      };
+
+      const setError = (key, message) => {
+        if (errors[key]) errors[key].textContent = message || '';
+      };
+
+      const getFormat = () => {
+        const selected = formatRadios.find((radio) => radio.checked);
+        return selected ? selected.value : '';
+      };
+
+      const updateConditionalFields = () => {
+        const format = getFormat();
+        const isVirtual = format === 'Virtual';
+        const needsLocation = format === 'In person' || format === 'Hybrid';
+
+        locationField.classList.toggle('hidden', !needsLocation);
+        if (!needsLocation) {
+          locationInput.value = '';
+        }
+
+        travelField.classList.toggle('hidden', isVirtual);
+        if (isVirtual) {
+          const checkedTravel = document.querySelector('input[name="travel_covered"]:checked');
+          if (checkedTravel) checkedTravel.checked = false;
+        }
+      };
+
+      const validate = () => {
+        let valid = true;
+        setError('fullName', '');
+        setError('email', '');
+        setError('eventDate', '');
+        setError('format', '');
+        setError('budget', '');
+
+        const nameInput = document.getElementById('fullName');
+        const emailInput = document.getElementById('email');
+
+        if (!nameInput.value.trim()) {
+          setError('fullName', 'Enter your full name.');
+          valid = false;
+        }
+        if (!emailInput.value.trim()) {
+          setError('email', 'Enter your email.');
+          valid = false;
+        } else if (!emailInput.checkValidity()) {
+          setError('email', 'Enter a valid email address.');
+          valid = false;
+        }
+
+        if (!dateInput.value && !flexCheckbox.checked) {
+          setError('eventDate', 'Pick a date or check “Our dates are flexible.”');
+          valid = false;
+        }
+
+        if (!getFormat()) {
+          setError('format', 'Choose a format.');
+          valid = false;
+        }
+
+        if (!budgetInput.value) {
+          setError('budget', 'Select a speaking budget range.');
+          valid = false;
+        }
+
+        return valid;
+      };
+
+      formatRadios.forEach((radio) => {
+        radio.addEventListener('change', updateConditionalFields);
+      });
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        confirmation.classList.add('hidden');
+        confirmation.classList.remove('error');
+        if (!validate()) return;
+
+        const payload = {
+          type: 'speaking',
+          fullName: document.getElementById('fullName').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          organization: document.getElementById('organization').value.trim(),
+          role: document.getElementById('role').value.trim(),
+          eventType: document.getElementById('eventType').value,
+          eventDate: dateInput.value,
+          datesFlexible: flexCheckbox.checked,
+          format: getFormat(),
+          location: document.getElementById('location').value.trim(),
+          audienceSize: document.getElementById('audienceSize').value,
+          audienceOutcome: document.getElementById('outcome').value.trim(),
+          budgetTier: budgetInput.value,
+          travelCovered: (document.querySelector('input[name="travel_covered"]:checked') || {}).value || '',
+          leadSource: document.getElementById('source').value
+        };
+
+        try {
+          if (!APPS_SCRIPT_WEBHOOK_URL) {
+            throw new Error('Webhook URL missing');
+          }
+
+          await fetch(APPS_SCRIPT_WEBHOOK_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+
+          confirmation.textContent = 'Thanks for reaching out about having Marcus speak. We review every request and reply within 3 business days.';
+          confirmation.classList.remove('hidden');
+          form.reset();
+          updateConditionalFields();
+        } catch (error) {
+          if (!APPS_SCRIPT_WEBHOOK_URL) {
+            confirmation.textContent = 'Form is not configured yet. Add your Google Apps Script Web App URL in js/config.js.';
+          } else {
+            confirmation.textContent = 'We could not send your speaking inquiry right now. Please try again in a moment.';
+          }
+          confirmation.classList.add('error');
+          confirmation.classList.remove('hidden');
+        }
+      });
+
+      updateConditionalFields();
+    })();
+  </script>
+</body>
+</html>

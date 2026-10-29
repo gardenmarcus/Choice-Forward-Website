@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Choice Forward</title>
+  <meta name="description" content="Contact Choice Forward for media, partnerships, classes, assessments, and general inquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --forest: #1f2937;
+      --forest-2: #2563eb;
+      --moss: #22c55e;
+      --cream: #f9fafb;
+      --paper: #ffffff;
+      --clay: #dc2626;
+      --clay-dark: #b91c1c;
+      --ink: #111827;
+      --muted: #4b5563;
+      --line: #e5e7eb;
+      --radius: 14px;
+      --max: 840px;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Inter", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--sans); background: var(--cream); color: var(--ink); line-height: 1.6; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(247, 242, 232, .92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav .wrap { height: 68px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: var(--serif); font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--forest); }
+    .logo span { color: var(--clay); }
+    .nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
+    .nav a { text-decoration: none; color: var(--muted); font-size: .95rem; }
+    .nav a.active { color: var(--forest); font-weight: 600; }
+
+    .hero { background: var(--forest); color: var(--cream); padding: 56px 0; }
+    .hero h1 { font-family: var(--serif); font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: 10px; line-height: 1.15; }
+    .hero p { color: #dbeafe; }
+
+    main { padding: 40px 0 80px; }
+    .form-shell { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+    .booking-link {
+      display: block;
+      margin-bottom: 18px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 10px 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .full { grid-column: 1 / -1; }
+    label { font-size: .85rem; font-weight: 600; }
+    input, select, textarea {
+      font: inherit; font-size: .95rem; padding: 12px 14px; border-radius: 10px;
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
+    }
+    input:focus, select:focus, textarea:focus { outline: 2px solid #86efac; border-color: #22c55e; }
+    textarea { min-height: 140px; resize: vertical; }
+    .hint-link {
+      display: none;
+      margin-top: 8px;
+      color: #1d4ed8;
+      font-size: .9rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .error { color: #b91c1c; font-size: .83rem; min-height: 1.1em; }
+    .actions { margin-top: 18px; }
+    .btn {
+      display: inline-block; padding: 12px 20px; border-radius: 999px;
+      border: 2px solid transparent; font: inherit; font-weight: 600; cursor: pointer;
+    }
+    .btn-primary { background: var(--clay); color: #fff; }
+    .btn-primary:hover { background: var(--clay-dark); }
+    .confirmation {
+      margin-top: 16px;
+      background: #ecfdf3;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: .95rem;
+      display: none;
+    }
+    .confirmation.error {
+      background: #fef2f2;
+      border-color: #fecaca;
+      color: #991b1b;
+    }
+
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .nav ul li:nth-child(-n+2) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo">Choice<span>Forward</span></a>
+      <ul>
+        <li><a href="index.html#offers">Ways to book</a></li>
+        <li><a href="index.html#topics">Topics</a></li>
+        <li><a href="book.html">Speaking</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Contact Choice Forward</h1>
+      <p>For media, partnerships, classes, assessments, or general questions.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <form id="contactForm" class="form-shell" action="#" method="post" novalidate>
+        <a href="book.html" class="booking-link">Looking to book a keynote, presentation or workshop? Start here →</a>
+        <input type="hidden" name="inquiry_type" value="general_contact" />
+        <input type="hidden" id="reasonTag" name="reason_tag" value="" />
+
+        <div class="grid">
+          <div class="field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required />
+            <p class="error" id="err-name"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+            <p class="error" id="err-email"></p>
+          </div>
+
+          <div class="field full">
+            <label for="reason">What are you reaching out about? *</label>
+            <select id="reason" name="reason" required>
+              <option value="">Select one</option>
+              <option value="Press or media">Press or media</option>
+              <option value="Brand partnership">Brand partnership</option>
+              <option value="Cohort class">Cohort class</option>
+              <option value="Wellness assessment">Wellness assessment</option>
+              <option value="Speaking or keynote">Speaking or keynote</option>
+              <option value="Other">Other</option>
+            </select>
+            <a id="inlineSpeakingLink" class="hint-link" href="book.html">This request is best handled on the speaking form → Book Marcus to Speak</a>
+            <p class="error" id="err-reason"></p>
+          </div>
+
+          <div class="field full">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+            <p class="error" id="err-message"></p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </div>
+        <p class="confirmation" id="confirmation">Thanks for reaching out. We review every message and reply within 3 business days.</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script>
+    (function () {
+      const APPS_SCRIPT_WEBHOOK_URL = (window.CF_CONFIG && window.CF_CONFIG.APPS_SCRIPT_WEBHOOK_URL) || '';
+      const form = document.getElementById('contactForm');
+      const reason = document.getElementById('reason');
+      const inlineSpeakingLink = document.getElementById('inlineSpeakingLink');
+      const reasonTag = document.getElementById('reasonTag');
+      const confirmation = document.getElementById('confirmation');
+
+      const errors = {
+        name: document.getElementById('err-name'),
+        email: document.getElementById('err-email'),
+        reason: document.getElementById('err-reason'),
+        message: document.getElementById('err-message')
+      };
+
+      const slugify = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+
+      const updateReasonUI = () => {
+        const current = reason.value;
+        reasonTag.value = current ? slugify(current) : '';
+        inlineSpeakingLink.style.display = current === 'Speaking or keynote' ? 'inline-block' : 'none';
+      };
+
+      const setError = (key, message) => {
+        if (errors[key]) errors[key].textContent = message || '';
+      };
+
+      const validate = () => {
+        let valid = true;
+        setError('name', '');
+        setError('email', '');
+        setError('reason', '');
+        setError('message', '');
+
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
+
+        if (!name.value.trim()) {
+          setError('name', 'Enter your name.');
+          valid = false;
+        }
+        if (!email.value.trim()) {
+          setError('email', 'Enter your email.');
+          valid = false;
+        } else if (!email.checkValidity()) {
+          setError('email', 'Enter a valid email address.');
+          valid = false;
+        }
+        if (!reason.value) {
+          setError('reason', 'Choose a reason.');
+          valid = false;
+        }
+        if (!message.value.trim()) {
+          setError('message', 'Enter your message.');
+          valid = false;
+        }
+
+        return valid;
+      };
+
+      reason.addEventListener('change', updateReasonUI);
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        confirmation.style.display = 'none';
+        confirmation.classList.remove('error');
+        if (!validate()) return;
+
+        const payload = {
+          type: 'contact',
+          name: document.getElementById('name').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          reason: reason.value,
+          reasonTag: reasonTag.value,
+          message: document.getElementById('message').value.trim()
+        };
+
+        try {
+          if (!APPS_SCRIPT_WEBHOOK_URL) {
+            throw new Error('Webhook URL missing');
+          }
+
+          await fetch(APPS_SCRIPT_WEBHOOK_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+
+          confirmation.textContent = 'Thanks for reaching out. We review every message and reply within 3 business days.';
+          confirmation.style.display = 'block';
+          form.reset();
+          updateReasonUI();
+        } catch (error) {
+          if (!APPS_SCRIPT_WEBHOOK_URL) {
+            confirmation.textContent = 'Form is not configured yet. Add your Google Apps Script Web App URL in js/config.js.';
+          } else {
+            confirmation.textContent = 'We could not send your message right now. Please try again in a moment.';
+          }
+          confirmation.classList.add('error');
+          confirmation.style.display = 'block';
+        }
+      });
+
+      updateReasonUI();
+    })();
+  </script>
+</body>
+</html>
