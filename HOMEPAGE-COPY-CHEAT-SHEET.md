@@ -15,6 +15,7 @@ Use this file to batch-edit copy for:
 
 ## GLOBAL NAV
 NAV_WAYS_TO_BOOK = Ways to book
+NAV_FRAMEWORK = Framework
 NAV_TOPICS = Topics
 NAV_GARDEN_MARCUS = Garden Marcus
 NAV_SPEAKING = Speaking
@@ -46,6 +47,7 @@ KEYNOTE_CTA = Request a keynote
 
 ### Card 2 — Workshops
 WORKSHOP_TAG = Choice Forward framework
+WORKSHOP_TAG_LINK = #framework
 WORKSHOP_TITLE = Team Workshops
 WORKSHOP_BODY = Interactive sessions built on the Choice Forward framework: practical tools for peace, balance, harmony, and connection at work.
 WORKSHOP_BULLET_1 = Leadership and team retreats
@@ -53,6 +55,39 @@ WORKSHOP_BULLET_2 = Employee wellbeing programs
 WORKSHOP_BULLET_3 = Breakouts and panel sessions
 WORKSHOP_META = 60–120 minutes · Workbook included 
 WORKSHOP_CTA = Plan a workshop
+
+## HOMEPAGE — FRAMEWORK
+FRAMEWORK_ID = framework
+FRAMEWORK_EYEBROW = The Choice Forward framework
+FRAMEWORK_TITLE = Growth is an everyday chain of choices.
+FRAMEWORK_INTRO = Choice Forward is the framework behind everything Marcus teaches. It starts in the soil, with the lessons of nature, and turns them into three chains of choices that shape how we treat ourselves, each other, and the world we share.
+
+FRAMEWORK_CHAIN_1_LABEL = Chain 01
+FRAMEWORK_CHAIN_1_TITLE = Kindness · Patience · Positivity
+FRAMEWORK_CHAIN_1_BODY = The chain that shapes how we treat ourselves and each other. It's where every talk, workshop, and cohort begins.
+
+FRAMEWORK_CHAIN_2_LABEL = Chain 02
+FRAMEWORK_CHAIN_2_TITLE = Discover · Grow · Bloom
+FRAMEWORK_CHAIN_2_BODY = The cycle every gardener knows, applied to people: finding what's possible, tending it with care, and letting it flourish in its own time.
+
+FRAMEWORK_CHAIN_3_BADGE = Coming next
+FRAMEWORK_CHAIN_3_LABEL = Chain 03
+FRAMEWORK_CHAIN_3_TITLE = Purpose · Drive · Impact
+FRAMEWORK_CHAIN_3_BODY = The chain for what we build and what we leave behind. Now being developed into its own course.
+
+FRAMEWORK_PILLARS_LEDE = In workshops and the cohort, the framework comes to life through four pillars:
+FRAMEWORK_PILLAR_1_TITLE = Peace
+FRAMEWORK_PILLAR_1_SUB = Mind
+FRAMEWORK_PILLAR_2_TITLE = Balance
+FRAMEWORK_PILLAR_2_SUB = Body
+FRAMEWORK_PILLAR_3_TITLE = Harmony
+FRAMEWORK_PILLAR_3_SUB = Spirit
+FRAMEWORK_PILLAR_4_TITLE = Connection
+FRAMEWORK_PILLAR_4_SUB = Community & environment
+
+FRAMEWORK_CTA_BODY = Want to go deeper than a single session? Ask about the cohort or the wellness assessment.
+FRAMEWORK_CTA_PRIMARY = Ask about the cohort
+FRAMEWORK_CTA_SECONDARY = Bring it to your team
 
 ### Card 3 — Plant workshops
 PLANT_TAG = Hands in the soil
@@ -68,16 +103,16 @@ PLANT_CTA = Book a plant workshop
 TOPICS_EYEBROW = Signature topics
 TOPICS_TITLE = What Marcus talks about
 TOPICS_LEDE = Each can be delivered as a keynote, a workshop, or paired with a plant experience.
-TOPIC_1_TITLE = Lessons from Nature, Wisdom for Life
-TOPIC_1_BODY = Marcus's signature talk, where he shares the many valuable lessons he's gained from life 
+TOPIC_1_TITLE = Growth Can't Be Forced
+TOPIC_1_BODY = Marcus’s signature talk. A garden taught him that you can’t force anything to grow, but you can tend the conditions that let it thrive. Through his own story, he shows audiences how to tend their roots, one choice at a time.
 TOPIC_1_FOR = Best for: conferences, kickoffs, education audiences
 TOPIC_2_TITLE = Kindness, Patience, Positivity
 TOPIC_2_BODY = The everyday chain of choices that shapes how we treat ourselves and each other, and how to strengthen it under pressure.
 TOPIC_2_FOR = Best for: teams, wellbeing programs
 TOPIC_3_TITLE = Leadership vs. Management
-TOPIC_3_BODY = Being the calm, proactive presence in a hard exchange instead of being run by it. Includes boundaries that actually hold, with techniques for building community and communication. 
+TOPIC_3_BODY = Managing is about handling what happens. Leading is about choosing how you show up when it does. Marcus shows how to be the calm, proactive presence in a hard exchange, set boundaries that actually hold, and build the communication and community a team can grow in.
 TOPIC_3_FOR = Best for: managers, leaders, customer-facing teams
-TOPIC_4_TITLE = Peace, Balance, Harmony & Connection
+TOPIC_4_TITLE = Navigating Burnout
 TOPIC_4_BODY = A whole-person look at mental, physical, spiritual, and community health, drawn from the Choice Forward framework.
 TOPIC_4_FOR = Best for: wellness weeks, retreats, associations
 
@@ -205,9 +240,10 @@ SPEAKING_OPTION_AUDIENCE_2 = 50–200
 SPEAKING_OPTION_AUDIENCE_3 = 200–500
 SPEAKING_OPTION_AUDIENCE_4 = 500–1,000
 SPEAKING_OPTION_AUDIENCE_5 = 1,000+
-SPEAKING_OPTION_BUDGET_1 = Under $2000
-SPEAKING_OPTION_BUDGET_2 = $2000–$5000
-SPEAKING_OPTION_BUDGET_3 = $5000+
+SPEAKING_OPTION_BUDGET_1 = Under $5000
+SPEAKING_OPTION_BUDGET_2 = $5000–$10,000
+SPEAKING_OPTION_BUDGET_3 = $10,000- $20,000
+SPEAKING_OPTION_BUDGET_4 = $20,000+
 SPEAKING_OPTION_TRAVEL_1 = Yes
 SPEAKING_OPTION_TRAVEL_2 = No
 SPEAKING_OPTION_TRAVEL_3 = Not sure yet
