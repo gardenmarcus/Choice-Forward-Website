@@ -135,6 +135,7 @@ GARDEN_LINK_INSTAGRAM = https://www.instagram.com/garden_marcus/
 GARDEN_LINK_TIKTOK = https://www.tiktok.com/@gardenmarcus
 GARDEN_LINK_FACEBOOK = https://www.facebook.com/gardenmarcusbridgewater
 GARDEN_LINK_SUBSTACK = https://substack.com/@marcusbridgewater
+GARDEN_LINK_YOUTUBE = https://www.youtube.com/@gardenmarcuskids
 
 ## HOMEPAGE — AUDIENCES
 AUDIENCE_EYEBROW = Who books Marcus
