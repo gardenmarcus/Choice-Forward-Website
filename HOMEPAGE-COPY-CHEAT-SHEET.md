@@ -62,18 +62,17 @@ FRAMEWORK_EYEBROW = The Choice Forward framework
 FRAMEWORK_TITLE = Growth is an everyday chain of choices.
 FRAMEWORK_INTRO = Choice Forward is the framework behind everything Marcus teaches. It starts in the soil, with the lessons of nature, and turns them into three chains of choices that shape how we treat ourselves, each other, and the world we share.
 
-FRAMEWORK_CHAIN_1_LABEL = Chain 01
-FRAMEWORK_CHAIN_1_TITLE = Kindness · Patience · Positivity
-FRAMEWORK_CHAIN_1_BODY = The chain that shapes how we treat ourselves and each other. It's where every talk, workshop, and cohort begins.
+FRAMEWORK_CHAIN_1_LABEL = Chain 1
+FRAMEWORK_CHAIN_1_TITLE = Mental Health · Physical Fitness · Spirital Awareness
+FRAMEWORK_CHAIN_1_BODY = The chain that help us understand ourselves, our hobbies, habits and routines. It's where every talk, workshop, and cohort begins.
 
-FRAMEWORK_CHAIN_2_LABEL = Chain 02
-FRAMEWORK_CHAIN_2_TITLE = Discover · Grow · Bloom
-FRAMEWORK_CHAIN_2_BODY = The cycle every gardener knows, applied to people: finding what's possible, tending it with care, and letting it flourish in its own time.
+FRAMEWORK_CHAIN_2_LABEL = Chain 2
+FRAMEWORK_CHAIN_2_TITLE = Kindness · Patience · Positivity
+FRAMEWORK_CHAIN_2_BODY = The chain that shapes how we treat ourselves and each other. It's where we chanllege our attitude, discipline, and resilence. 
 
-FRAMEWORK_CHAIN_3_BADGE = Coming next
-FRAMEWORK_CHAIN_3_LABEL = Chain 03
+FRAMEWORK_CHAIN_3_LABEL = Chain 3
 FRAMEWORK_CHAIN_3_TITLE = Purpose · Drive · Impact
-FRAMEWORK_CHAIN_3_BODY = The chain for what we build and what we leave behind. Now being developed into its own course.
+FRAMEWORK_CHAIN_3_BODY = The chain for what we build, how we sustain it, and what we leave behind. It's where we address our choices and their alignment to our communities needs and wants. 
 
 FRAMEWORK_PILLARS_LEDE = In workshops and the cohort, the framework comes to life through four pillars:
 FRAMEWORK_PILLAR_1_TITLE = Peace
@@ -144,10 +143,10 @@ AUDIENCE_1_TITLE = Companies
 AUDIENCE_1_BODY = All-hands, offsites, ERG events, and wellbeing programs.
 AUDIENCE_2_TITLE = Conferences
 AUDIENCE_2_BODY = Opening and closing keynotes, breakouts, and fireside chats.
-AUDIENCE_3_TITLE = Schools & Libraries
-AUDIENCE_3_BODY = Author visits, family nights, and plant programs for kids.
+AUDIENCE_3_TITLE = Schools, Universities & Libraries
+AUDIENCE_3_BODY = Author visits, study breaks, midterm inspiration, family nights, and plant programs for kids.
 AUDIENCE_4_TITLE = Chambers & Associations
-AUDIENCE_4_BODY = Member luncheons, leadership series, and community events.
+AUDIENCE_4_BODY = Member luncheons, leadership series, fundraisers, and community events.
 
 ## HOMEPAGE — PROCESS
 PROCESS_EYEBROW = How it works
