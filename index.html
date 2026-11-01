@@ -30,6 +30,9 @@
       --ink: #111827;
       --muted: #4b5563;
       --line: #e5e7eb;
+      --cf-logo-blue: #626D9A;
+      --cf-logo-green: #53C8A0;
+      --cf-logo-red: #D4787D;
       --radius: 14px;
       --max: 1120px;
       --serif: "Fraunces", Georgia, serif;
@@ -344,6 +347,7 @@
       padding: 4px 0 4px 14px;
       background: #f8fafc;
       border-radius: 6px;
+      position: relative;
     }
     .cf-fw__pillar-row strong {
       display: block;
@@ -353,6 +357,50 @@
     .cf-fw__pillar-row small {
       color: var(--muted);
       font-size: .88rem;
+    }
+    .cf-fw__shape {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .cf-fw__shape--triangle {
+      width: 16px;
+      height: 14px;
+      background: var(--cf-logo-blue);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    .cf-fw__shape--square {
+      width: 14px;
+      height: 14px;
+      background: var(--cf-logo-green);
+    }
+    .cf-fw__shape--circle {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--cf-logo-red);
+    }
+    .cf-fw__shape-set {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .cf-fw__shape-set .cf-fw__shape--triangle {
+      width: 9px;
+      height: 8px;
+    }
+    .cf-fw__shape-set .cf-fw__shape--square,
+    .cf-fw__shape-set .cf-fw__shape--circle {
+      width: 8px;
+      height: 8px;
     }
     .cf-fw__cta {
       margin-top: 36px;
@@ -737,10 +785,17 @@
           In workshops and the cohort, the framework comes to life through four pillars:
         </p>
         <ul class="cf-fw__pillar-row">
-          <li><strong>Peace</strong><small>Mind</small></li>
-          <li><strong>Balance</strong><small>Body</small></li>
-          <li><strong>Harmony</strong><small>Spirit</small></li>
-          <li><strong>Connection</strong><small>Community &amp; environment</small></li>
+          <li><strong>Peace</strong><small>Mind</small><span class="cf-fw__shape cf-fw__shape--triangle" aria-hidden="true"></span></li>
+          <li><strong>Balance</strong><small>Body</small><span class="cf-fw__shape cf-fw__shape--square" aria-hidden="true"></span></li>
+          <li><strong>Harmony</strong><small>Spirit</small><span class="cf-fw__shape cf-fw__shape--circle" aria-hidden="true"></span></li>
+          <li>
+            <strong>Connection</strong><small>Community &amp; environment</small>
+            <span class="cf-fw__shape-set" aria-hidden="true">
+              <span class="cf-fw__shape--triangle"></span>
+              <span class="cf-fw__shape--square"></span>
+              <span class="cf-fw__shape--circle"></span>
+            </span>
+          </li>
         </ul>
       </div>
 
