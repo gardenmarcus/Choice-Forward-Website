@@ -488,23 +488,27 @@
     .book-cta-panel p { color: var(--muted); margin-bottom: 18px; }
     .book-cta-panel .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 
-    .book-logo-wrap {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-    }
-    .book-logo {
-      display: block;
-      width: clamp(88px, 12vw, 130px);
-      height: auto;
-      opacity: .96;
-    }
-
     /* ---------- FOOTER ---------- */
-    footer { padding: 40px 0; font-size: .9rem; color: var(--muted); }
+    footer {
+      position: relative;
+      padding: 40px 0;
+      font-size: .9rem;
+      color: var(--muted);
+    }
     footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
     footer a { text-decoration: none; margin-left: 18px; }
     footer a:hover { color: var(--forest); }
+    .footer-center-logo {
+      position: absolute;
+      left: 50%;
+      bottom: 6px;
+      transform: translateX(-50%);
+      display: block;
+      width: clamp(112px, 14vw, 170px);
+      height: auto;
+      opacity: .96;
+      pointer-events: none;
+    }
 
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 900px) {
@@ -526,7 +530,7 @@
       .cf-fw__pillar-row { grid-template-columns: repeat(2, 1fr); row-gap: 12px; }
       .quote { height: 400px; }
       footer a { margin: 0 14px 0 0; }
-      .book-logo { width: 78px; }
+      .footer-center-logo { width: 112px; }
     }
   </style>
 </head>
@@ -876,9 +880,6 @@
         </div>
       </div>
     </div>
-    <div class="book-logo-wrap">
-      <img class="book-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Bottom%20Logo.svg" alt="Choice Forward logo" loading="lazy" />
-    </div>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
@@ -892,6 +893,7 @@
         <a href="contact.html">Contact</a>
       </span>
     </div>
+    <img class="footer-center-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Bottom%20Logo.svg" alt="Choice Forward logo" loading="lazy" />
   </footer>
 
   <script>
