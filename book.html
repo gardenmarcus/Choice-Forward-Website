@@ -95,10 +95,22 @@
       border-color: #fecaca;
       color: #991b1b;
     }
+    .speaking-logo-wrap {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .speaking-logo {
+      display: block;
+      width: clamp(88px, 14vw, 140px);
+      height: auto;
+      opacity: .96;
+    }
 
     @media (max-width: 760px) {
       .grid { grid-template-columns: 1fr; }
       .nav ul li:nth-child(-n+2) { display: none; }
+      .speaking-logo { width: 82px; }
     }
   </style>
 </head>
@@ -261,6 +273,9 @@
         </div>
         <p id="confirmation" class="confirmation hidden">Thanks for reaching out about having Marcus speak. We review every request and reply within 3 business days.</p>
       </form>
+      <div class="speaking-logo-wrap">
+        <img class="speaking-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Bottom%20Logo.svg" alt="Choice Forward logo" loading="lazy" />
+      </div>
     </div>
   </main>
 
