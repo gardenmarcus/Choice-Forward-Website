@@ -488,25 +488,23 @@
     .book-cta-panel p { color: var(--muted); margin-bottom: 18px; }
     .book-cta-panel .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 
+    .book-logo-wrap {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .book-logo {
+      display: block;
+      width: clamp(88px, 12vw, 130px);
+      height: auto;
+      opacity: .96;
+    }
+
     /* ---------- FOOTER ---------- */
-    footer { position: relative; padding: 40px 0; font-size: .9rem; color: var(--muted); }
+    footer { padding: 40px 0; font-size: .9rem; color: var(--muted); }
     footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
     footer a { text-decoration: none; margin-left: 18px; }
     footer a:hover { color: var(--forest); }
-    .footer-mini-logo-link {
-      position: absolute;
-      left: 50%;
-      bottom: 8px;
-      transform: translateX(-50%);
-      display: inline-flex;
-      margin-left: 0;
-    }
-    .footer-mini-logo {
-      display: block;
-      width: 22px;
-      height: auto;
-      opacity: .95;
-    }
 
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 900px) {
@@ -528,7 +526,7 @@
       .cf-fw__pillar-row { grid-template-columns: repeat(2, 1fr); row-gap: 12px; }
       .quote { height: 400px; }
       footer a { margin: 0 14px 0 0; }
-      .footer-mini-logo { width: 18px; }
+      .book-logo { width: 78px; }
     }
   </style>
 </head>
@@ -878,6 +876,9 @@
         </div>
       </div>
     </div>
+    <div class="book-logo-wrap">
+      <img class="book-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Log.png" alt="Choice Forward logo" loading="lazy" />
+    </div>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
@@ -891,9 +892,6 @@
         <a href="contact.html">Contact</a>
       </span>
     </div>
-    <a class="footer-mini-logo-link" href="index.html" aria-label="Choice Forward home">
-      <img class="footer-mini-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Log.png" alt="Choice Forward logo" loading="lazy" />
-    </a>
   </footer>
 
   <script>
