@@ -489,27 +489,23 @@
     .book-cta-panel .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 
     /* ---------- FOOTER ---------- */
-    footer { padding: 40px 0; font-size: .9rem; color: var(--muted); }
-    footer .wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 18px;
-      text-align: center;
-    }
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-    }
-    footer a { text-decoration: none; margin-left: 0; }
+    footer { position: relative; padding: 40px 0; font-size: .9rem; color: var(--muted); }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+    footer a { text-decoration: none; margin-left: 18px; }
     footer a:hover { color: var(--forest); }
-    .footer-logo {
+    .footer-mini-logo-link {
+      position: absolute;
+      left: 50%;
+      bottom: 8px;
+      transform: translateX(-50%);
+      display: inline-flex;
+      margin-left: 0;
+    }
+    .footer-mini-logo {
       display: block;
-      width: clamp(124px, 22vw, 190px);
+      width: 22px;
       height: auto;
-      opacity: .96;
+      opacity: .95;
     }
 
     /* ---------- RESPONSIVE ---------- */
@@ -531,7 +527,8 @@
       .stats { grid-template-columns: 1fr 1fr; }
       .cf-fw__pillar-row { grid-template-columns: repeat(2, 1fr); row-gap: 12px; }
       .quote { height: 400px; }
-      .footer-links { gap: 10px; }
+      footer a { margin: 0 14px 0 0; }
+      .footer-mini-logo { width: 18px; }
     }
   </style>
 </head>
@@ -887,16 +884,16 @@
   <footer>
     <div class="wrap">
       <span>© 2026 Choice Forward LLC</span>
-      <span class="footer-links">
+      <span>
         <a href="https://gardenmarcus.com" target="_blank" rel="noopener">Garden Marcus</a>
         <a href="#offers">Ways to book</a>
         <a href="book.html">Speaking</a>
         <a href="contact.html">Contact</a>
       </span>
-      <a href="index.html" aria-label="Choice Forward home">
-        <img class="footer-logo" src="assets/images/garden-marcus-logos/choice-forward-favicon.svg" alt="Choice Forward geometric logo" loading="lazy" />
-      </a>
     </div>
+    <a class="footer-mini-logo-link" href="index.html" aria-label="Choice Forward home">
+      <img class="footer-mini-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Log.png" alt="Choice Forward logo" loading="lazy" />
+    </a>
   </footer>
 
   <script>
