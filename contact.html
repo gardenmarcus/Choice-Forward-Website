@@ -100,10 +100,22 @@
       border-color: #fecaca;
       color: #991b1b;
     }
+    .contact-logo-wrap {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .contact-logo {
+      display: block;
+      width: clamp(88px, 14vw, 140px);
+      height: auto;
+      opacity: .96;
+    }
 
     @media (max-width: 760px) {
       .grid { grid-template-columns: 1fr; }
       .nav ul li:nth-child(-n+2) { display: none; }
+      .contact-logo { width: 82px; }
     }
   </style>
 </head>
@@ -175,6 +187,9 @@
         </div>
         <p class="confirmation" id="confirmation">Thanks for reaching out. We review every message and reply within 3 business days.</p>
       </form>
+      <div class="contact-logo-wrap">
+        <img class="contact-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Logo.svg" alt="Choice Forward logo" loading="lazy" />
+      </div>
     </div>
   </main>
 
