@@ -76,17 +76,8 @@
       border-bottom: 1px solid var(--line);
     }
     .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-      line-height: 0;
-    }
-    .logo img {
-      display: block;
-      height: 36px;
-      width: auto;
-    }
+    .logo { font-family: var(--serif); font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--forest); }
+    .logo span { color: var(--clay); }
     .nav ul { display: flex; gap: 28px; list-style: none; align-items: center; }
     .nav ul a { text-decoration: none; font-size: .95rem; font-weight: 500; color: var(--muted); }
     .nav ul a:hover { color: var(--forest); }
@@ -528,7 +519,6 @@
     }
     @media (max-width: 560px) {
       section { padding: 64px 0; }
-      .logo img { height: 30px; }
       .aud-grid, .steps { grid-template-columns: 1fr; }
       .proof-item { min-width: 0; }
       .book form { grid-template-columns: 1fr; padding: 22px; }
@@ -545,9 +535,7 @@
   <!-- ===================== NAV ===================== -->
   <nav class="nav">
     <div class="wrap">
-      <a href="index.html" class="logo" aria-label="Choice Forward home">
-        <img src="assets/images/logos/choice-forward-main-logo.svg" alt="Choice Forward" />
-      </a>
+      <a href="index.html" class="logo">Choice<span>Forward</span></a>
       <ul>
         <li><a href="#offers">Ways to book</a></li>
         <li><a href="#framework">Framework</a></li>
