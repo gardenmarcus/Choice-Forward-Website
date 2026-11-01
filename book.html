@@ -39,8 +39,17 @@
       border-bottom: 1px solid var(--line);
     }
     .nav .wrap { height: 68px; display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-family: var(--serif); font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--forest); }
-    .logo span { color: var(--clay); }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      line-height: 0;
+    }
+    .logo img {
+      display: block;
+      height: 36px;
+      width: auto;
+    }
     .nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
     .nav a { text-decoration: none; color: var(--muted); font-size: .95rem; }
     .nav a.active { color: var(--forest); font-weight: 600; }
@@ -97,6 +106,7 @@
     }
 
     @media (max-width: 760px) {
+      .logo img { height: 30px; }
       .grid { grid-template-columns: 1fr; }
       .nav ul li:nth-child(-n+2) { display: none; }
     }
@@ -105,7 +115,9 @@
 <body>
   <nav class="nav">
     <div class="wrap">
-      <a href="index.html" class="logo">Choice<span>Forward</span></a>
+      <a href="index.html" class="logo" aria-label="Choice Forward home">
+        <img src="assets/images/logos/choice-forward-main-logo.svg" alt="Choice Forward" />
+      </a>
       <ul>
         <li><a href="index.html#offers">Ways to book</a></li>
         <li><a href="index.html#topics">Topics</a></li>
