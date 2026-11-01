@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" role="img" aria-labelledby="title desc">
+  <title id="title">Choice Forward logo</title>
+  <desc id="desc">A blue triangle, green square, and coral circle on a black background.</desc>
+  <rect width="768" height="768" fill="#000000"/>
+  <polygon points="8,472 228,472 118,280" fill="#626D9A"/>
+  <rect x="305" y="280" width="192" height="192" fill="#53C8A0"/>
+  <circle cx="639" cy="376" r="96" fill="#D4787D"/>
+</svg>
