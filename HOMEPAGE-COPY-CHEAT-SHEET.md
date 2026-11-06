@@ -34,7 +34,7 @@ HERO_EYEBROW_KEYNOTES = Keynotes & Presentations
 HERO_EYEBROW_WORKSHOPS = Workshops
 HERO_EYEBROW_PLANT = Plant Experiences
 HERO_HEADLINE = Bring <em>Garden Marcus</em> to your stage, your team, your community.
-HERO_BODY = Marcus Bridgewater, known to millions as Garden Marcus, uses the lessons of nature to share wisdom for life. With kindness, patience, and positivity, he speaks, teaches, and inspires organizations, large and intimate audiences, to get both their hands in their real and metaphorical soil and address their growth.
+HERO_BODY = Marcus Bridgewater, author of <em>How to Grow</em>, known to millions as Garden Marcus, uses the lessons of nature to share wisdom for life. With kindness, patience, and positivity, he speaks, teaches, and inspires organizations, large and intimate audiences, to get both their hands in their real and metaphorical soil and address their growth.
 HERO_CTA_PRIMARY = Book Marcus
 HERO_CTA_SECONDARY = See ways to book
 
@@ -51,7 +51,7 @@ KEYNOTE_BULLET_1 = Conferences and annual meetings
 KEYNOTE_BULLET_2 = Company all-hands and kickoffs
 KEYNOTE_BULLET_3 = Commencements and galas
 KEYNOTE_META = 30–60 minutes · In person or virtual · Q&A available
-KEYNOTE_CTA = Request a keynote
+KEYNOTE_CTA = View keynote details
 
 ### Card 2 — Workshops
 WORKSHOP_TAG = Choice Forward framework
@@ -248,9 +248,9 @@ SPEAKING_OPTION_AUDIENCE_2 = 50–200
 SPEAKING_OPTION_AUDIENCE_3 = 200–500
 SPEAKING_OPTION_AUDIENCE_4 = 500–1,000
 SPEAKING_OPTION_AUDIENCE_5 = 1,000+
-SPEAKING_OPTION_BUDGET_1 = Under $5000
-SPEAKING_OPTION_BUDGET_2 = $5000–$10,000
-SPEAKING_OPTION_BUDGET_3 = $10,000- $20,000
+SPEAKING_OPTION_BUDGET_1 = Under $10,000
+SPEAKING_OPTION_BUDGET_2 = $10000–$15,000
+SPEAKING_OPTION_BUDGET_3 = $15,000- $20,000
 SPEAKING_OPTION_BUDGET_4 = $20,000+
 SPEAKING_OPTION_TRAVEL_1 = Yes
 SPEAKING_OPTION_TRAVEL_2 = No
@@ -329,7 +329,7 @@ KEYNOTES_FACT_4_VALUE = Houston area · travels nationwide
 
 KEYNOTES_SECTION_TITLE = What a Garden Marcus keynote feels like
 KEYNOTES_SECTION_BODY_1 = Marcus opens a room by meeting people where they are: with warmth, humor, and honesty. He shares the story of how the garden changed his life, and why growth can’t be forced, only tended with intention.
-KEYNOTES_SECTION_BODY_2 = Each keynote connects what happens in the soil to what happens in us, drawing from the Choice Forward framework and Marcus’s books, including <em>How to Grow</em> and <em>See Marcus Grow</em>.
+KEYNOTES_SECTION_BODY_2 = Each keynote connects what happens in the soil to what happens in us, drawing from the Choice Forward framework and Marcus’s books, including <em>How to Grow</em>, <em>Seasons of Growth</em>, and <em>See Marcus Grow</em>.
 KEYNOTES_SECTION_BODY_3 = Marcus' technical background coupled with his stage presence helps the event planners of all kinds. Whether you are in search of a keynote speaker, motivational speaker, wellbeing speaker, or someone to synergize your conference keynote, Marcus can deliver. 
 
 KEYNOTES_BEST_FOR_TITLE = Best for
