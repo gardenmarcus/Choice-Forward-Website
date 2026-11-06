@@ -4,6 +4,14 @@ Use this file to batch-edit copy for:
 - Homepage ([index.html](index.html))
 - Speaking intake page ([book.html](book.html))
 - Contact page ([contact.html](contact.html))
+- Keynotes breakout ([keynotes.html](keynotes.html))
+- Workshops breakout ([workshops.html](workshops.html))
+- Plant workshops breakout ([plant-workshops.html](plant-workshops.html))
+- Topic pages:
+	- [growth-cant-be-forced.html](growth-cant-be-forced.html)
+	- [kindness-patience-positivity.html](kindness-patience-positivity.html)
+	- [leadership-vs-management.html](leadership-vs-management.html)
+	- [navigating-burnout.html](navigating-burnout.html)
 
 ## How to use
 1. Edit only the text after each `=`.
@@ -18,7 +26,7 @@ NAV_WAYS_TO_BOOK = Ways to book
 NAV_FRAMEWORK = Framework
 NAV_TOPICS = Topics
 NAV_GARDEN_MARCUS = Garden Marcus
-NAV_SPEAKING = Speaking
+NAV_SPEAKING = Book Marcus
 NAV_CONTACT = Contact
 
 ## HOMEPAGE — HERO
@@ -26,8 +34,8 @@ HERO_EYEBROW_KEYNOTES = Keynotes & Presentations
 HERO_EYEBROW_WORKSHOPS = Workshops
 HERO_EYEBROW_PLANT = Plant Experiences
 HERO_HEADLINE = Bring <em>Garden Marcus</em> to your stage, your team, your community.
-HERO_BODY = Marcus Bridgewater, known to millions as Garden Marcus, uses the lessons of nature to share wisdom for life. With kindness, patience, and positivity, he speaks, teaches, and inspires organizations, large and intimate audiences, to get both their hands in their  real and methaphorical soil and address their growth.
-HERO_CTA_PRIMARY = Check availability
+HERO_BODY = Marcus Bridgewater, known to millions as Garden Marcus, uses the lessons of nature to share wisdom for life. With kindness, patience, and positivity, he speaks, teaches, and inspires organizations, large and intimate audiences, to get both their hands in their real and metaphorical soil and address their growth.
+HERO_CTA_PRIMARY = Book Marcus
 HERO_CTA_SECONDARY = See ways to book
 
 ## HOMEPAGE — OFFERS
@@ -54,7 +62,7 @@ WORKSHOP_BULLET_1 = Leadership and team retreats
 WORKSHOP_BULLET_2 = Employee wellbeing programs
 WORKSHOP_BULLET_3 = Breakouts and panel sessions
 WORKSHOP_META = 60–120 minutes · Workbook included 
-WORKSHOP_CTA = Plan a workshop
+WORKSHOP_CTA = View workshop details
 
 ## HOMEPAGE — FRAMEWORK
 FRAMEWORK_ID = framework
@@ -63,16 +71,16 @@ FRAMEWORK_TITLE = Growth is an everyday chain of choices.
 FRAMEWORK_INTRO = Choice Forward is the framework behind everything Marcus teaches. It starts in the soil, with the lessons of nature, and turns them into three chains of choices that shape how we treat ourselves, each other, and the world we share.
 
 FRAMEWORK_CHAIN_1_LABEL = Chain 1
-FRAMEWORK_CHAIN_1_TITLE = Mental Health · Physical Fitness · Spirital Awareness
-FRAMEWORK_CHAIN_1_BODY = The chain that help us understand ourselves, our hobbies, habits and routines. It's where every talk, workshop, and cohort begins.
+FRAMEWORK_CHAIN_1_TITLE = Mental Health · Physical Fitness · Spiritual Awareness
+FRAMEWORK_CHAIN_1_BODY = The chain that helps us understand ourselves, our hobbies, habits, and routines. It's where every talk, workshop, and cohort begins.
 
 FRAMEWORK_CHAIN_2_LABEL = Chain 2
 FRAMEWORK_CHAIN_2_TITLE = Kindness · Patience · Positivity
-FRAMEWORK_CHAIN_2_BODY = The chain that shapes how we treat ourselves and each other. It's where we chanllege our attitude, discipline, and resilence. 
+FRAMEWORK_CHAIN_2_BODY = The chain that shapes how we treat ourselves and each other. It's where we challenge our attitude, discipline, and resilience. 
 
 FRAMEWORK_CHAIN_3_LABEL = Chain 3
 FRAMEWORK_CHAIN_3_TITLE = Purpose · Drive · Impact
-FRAMEWORK_CHAIN_3_BODY = The chain for what we build, how we sustain it, and what we leave behind. It's where we address our choices and their alignment to our communities needs and wants. 
+FRAMEWORK_CHAIN_3_BODY = The chain for what we build, how we sustain it, and what we leave behind. It's where we address our choices and their alignment to our community's needs and wants. 
 
 FRAMEWORK_PILLARS_LEDE = In workshops and the cohort, the framework comes to life through four pillars:
 FRAMEWORK_PILLAR_1_TITLE = Peace
@@ -96,7 +104,7 @@ PLANT_BULLET_1 = Team building and client events
 PLANT_BULLET_2 = Libraries, schools, and family programs
 PLANT_BULLET_3 = Community and civic gatherings
 PLANT_META = 60–90 minutes · Materials kits available 
-PLANT_CTA = Book a plant workshop
+PLANT_CTA = View plant workshop details
 
 ## HOMEPAGE — TOPICS
 TOPICS_EYEBROW = Signature topics
@@ -195,7 +203,7 @@ HOME_DIRECT_LINE = Prefer email?
 HOME_DIRECT_EMAIL = info@choiceforward.com
 
 ## SPEAKING PAGE — HERO
-SPEAKING_EYEBROW = Speaking intake
+SPEAKING_EYEBROW = Book Marcus intake
 SPEAKING_TITLE = Book Marcus to Speak
 SPEAKING_LEDE = For keynotes, workshops, panels, and event sessions. Share the essentials and we’ll follow up with availability and next steps.
 
@@ -298,5 +306,130 @@ CONTACT_CONFIRMATION = Thanks for reaching out. We review every message and repl
 FOOTER_COPYRIGHT = © 2026 Choice Forward LLC
 FOOTER_LINK_1 = Garden Marcus
 FOOTER_LINK_2 = Ways to book
-FOOTER_LINK_3 = Speaking
+FOOTER_LINK_3 = Book Marcus
 FOOTER_LINK_4 = Contact
+
+---
+
+## KEYNOTES BREAKOUT PAGE ([keynotes.html](keynotes.html))
+KEYNOTES_EYEBROW = Keynotes and presentations
+KEYNOTES_H1 = Keynote speaker Marcus Bridgewater, known as Garden Marcus
+KEYNOTES_LEDE = A main-stage talk that energizes and inspires the audience. Personal, funny, and built to stick long after the event ends.
+KEYNOTES_CTA_PRIMARY = Request a keynote
+KEYNOTES_CTA_SECONDARY = Watch Marcus speak
+
+KEYNOTES_FACT_1_LABEL = Length
+KEYNOTES_FACT_1_VALUE = 30–60 minutes
+KEYNOTES_FACT_2_LABEL = Format
+KEYNOTES_FACT_2_VALUE = In person or virtual
+KEYNOTES_FACT_3_LABEL = Add-on
+KEYNOTES_FACT_3_VALUE = Q&A available
+KEYNOTES_FACT_4_LABEL = Based in
+KEYNOTES_FACT_4_VALUE = Houston area · travels nationwide
+
+KEYNOTES_SECTION_TITLE = What a Garden Marcus keynote feels like
+KEYNOTES_SECTION_BODY_1 = Marcus opens a room by meeting people where they are: with warmth, humor, and honesty. He shares the story of how the garden changed his life, and why growth can’t be forced, only tended with intention.
+KEYNOTES_SECTION_BODY_2 = Each keynote connects what happens in the soil to what happens in us, drawing from the Choice Forward framework and Marcus’s books, including <em>How to Grow</em> and <em>See Marcus Grow</em>.
+KEYNOTES_SECTION_BODY_3 = Marcus' technical background coupled with his stage presence helps the event planners of all kinds. Whether you are in search of a keynote speaker, motivational speaker, wellbeing speaker, or someone to synergize your conference keynote, Marcus can deliver. 
+
+KEYNOTES_BEST_FOR_TITLE = Best for
+KEYNOTES_BEST_FOR_1 = Conferences and annual meetings
+KEYNOTES_BEST_FOR_2 = Company all-hands and kickoffs
+KEYNOTES_BEST_FOR_3 = Commencements and galas
+KEYNOTES_BEST_FOR_4 = Chamber and association luncheons
+
+KEYNOTES_TOPICS_TITLE = Keynote topics
+KEYNOTES_REEL_PLACEHOLDER = [Keynote reel, 2–3 minutes — the single most important asset for planners]
+KEYNOTES_TESTIMONIALS_TITLE = What organizers say
+KEYNOTES_FAQ_TITLE = Keynote FAQ
+KEYNOTES_BOTTOM_CTA_TITLE = Bring Garden Marcus to your stage.
+KEYNOTES_BOTTOM_CTA_BUTTON = Request a keynote
+
+## WORKSHOPS BREAKOUT PAGE ([workshops.html](workshops.html))
+WORKSHOPS_EYEBROW = Team workshops
+WORKSHOPS_H1 = Team wellbeing and leadership workshops with Marcus Bridgewater
+WORKSHOPS_LEDE = Interactive sessions built on the Choice Forward framework: practical tools for peace, balance, harmony, and connection at work.
+WORKSHOPS_CTA_PRIMARY = Plan a workshop
+WORKSHOPS_CTA_SECONDARY = How the framework works
+
+WORKSHOPS_FACT_1_LABEL = Length
+WORKSHOPS_FACT_1_VALUE = 60–120 minutes
+WORKSHOPS_FACT_2_LABEL = Included
+WORKSHOPS_FACT_2_VALUE = Workbook for every participant
+WORKSHOPS_FACT_3_LABEL = Format
+WORKSHOPS_FACT_3_VALUE = In person or virtual
+WORKSHOPS_FACT_4_LABEL = Group size
+WORKSHOPS_FACT_4_VALUE = 5–25
+
+WORKSHOPS_SECTION_TITLE = Four pillars your team works through
+WORKSHOPS_SECTION_BODY = Each session blends practical reflection, small-group conversation, and clear takeaways your team can use right away. Teams work through workbook exercises that map the four pillars to everyday leadership and communication moments.
+WORKSHOPS_TESTIMONIALS_TITLE = What organizers are saying
+WORKSHOPS_FAQ_TITLE = Workshop FAQ
+WORKSHOPS_BOTTOM_CTA_TITLE = Give your team tools they'll actually use.
+WORKSHOPS_BOTTOM_CTA_BUTTON = Plan a workshop
+
+## PLANT WORKSHOPS BREAKOUT PAGE ([plant-workshops.html](plant-workshops.html))
+PLANT_WORKSHOPS_EYEBROW = Hands in the soil
+PLANT_WORKSHOPS_H1 = Hands-on plant workshops for teams, led by Garden Marcus
+PLANT_WORKSHOPS_LEDE = Marcus leads your group through a hands-on plant experience. Everyone leaves with something living, and a lesson that grows with it.
+PLANT_WORKSHOPS_CTA_PRIMARY = Book a plant workshop
+PLANT_WORKSHOPS_CTA_SECONDARY = What happens in a session
+
+PLANT_WORKSHOPS_FACT_1_LABEL = Length
+PLANT_WORKSHOPS_FACT_1_VALUE = 60–90 minutes
+PLANT_WORKSHOPS_FACT_2_LABEL = Materials
+PLANT_WORKSHOPS_FACT_2_VALUE = Kits available
+PLANT_WORKSHOPS_FACT_3_LABEL = Everyone leaves with
+PLANT_WORKSHOPS_FACT_3_VALUE = A living plant
+PLANT_WORKSHOPS_FACT_4_LABEL = Group size
+PLANT_WORKSHOPS_FACT_4_VALUE = 10-50
+
+PLANT_WORKSHOPS_SECTION_TITLE = Team building that grows after the event
+PLANT_WORKSHOPS_SECTION_BODY_1 = Plant workshops create an immediate shared experience: people get their hands in soil, slow down, and reconnect. Marcus guides the room with practical instruction and storytelling that makes each step meaningful and accessible.
+PLANT_WORKSHOPS_SECTION_BODY_2 = Participants leave with a plant they cared for themselves and a simple framework they can apply to growth at work and at home.  
+PLANT_WORKSHOPS_SECTION_BODY_3 = If you are an event planner looking for team building activity, corporate wellness event, or a client appreciation event, Marcus is the guy for you. He will help your team reach your goals.
+
+PLANT_WORKSHOPS_TESTIMONIALS_TITLE = What participants say
+PLANT_WORKSHOPS_FAQ_TITLE = Plant workshop FAQ
+PLANT_WORKSHOPS_BOTTOM_CTA_TITLE = Get your group's hands in the soil.
+PLANT_WORKSHOPS_BOTTOM_CTA_BUTTON = Book a plant workshop
+
+## TOPIC PAGE — GROWTH CAN'T BE FORCED ([growth-cant-be-forced.html](growth-cant-be-forced.html))
+TOPIC_GROWTH_EYEBROW = Marcus's signature talk
+TOPIC_GROWTH_H1 = Growth Can't Be Forced
+TOPIC_GROWTH_LEDE = A garden taught him that you can't force anything to grow, but you can tend the conditions that let it thrive. Through his own story, he shows audiences how to tend their roots, and the tree of their life, one choice at a time.
+TOPIC_GROWTH_ABOUT_TITLE = About this talk
+TOPIC_GROWTH_TAKEAWAYS_TITLE = Your audience will leave with
+TOPIC_GROWTH_BEST_FOR = Conferences, kickoffs, education audiences
+TOPIC_GROWTH_BOTTOM_CTA = Bring Growth Can't Be Forced to your event.
+TOPIC_GROWTH_BOTTOM_BUTTON = Book this talk
+
+## TOPIC PAGE — KINDNESS, PATIENCE, POSITIVITY ([kindness-patience-positivity.html](kindness-patience-positivity.html))
+TOPIC_KPP_EYEBROW = Keynote or workshop
+TOPIC_KPP_H1 = Kindness, Patience, Positivity
+TOPIC_KPP_LEDE = The everyday chain of choices that shapes how we treat ourselves and each other, and how to strengthen it under pressure.
+TOPIC_KPP_ABOUT_TITLE = About this talk
+TOPIC_KPP_TAKEAWAYS_TITLE = Your audience will leave with
+TOPIC_KPP_BEST_FOR = Teams, wellbeing programs
+TOPIC_KPP_BOTTOM_CTA = Bring Kindness, Patience, Positivity to your team.
+TOPIC_KPP_BOTTOM_BUTTON = Book this talk
+
+## TOPIC PAGE — LEADERSHIP VS. MANAGEMENT ([leadership-vs-management.html](leadership-vs-management.html))
+TOPIC_LVM_EYEBROW = Keynote or workshop
+TOPIC_LVM_H1 = Leadership vs. Management
+TOPIC_LVM_LEDE = Managing is about handling what happens. Leading is about choosing how you show up when it does.
+TOPIC_LVM_ABOUT_TITLE = About this talk
+TOPIC_LVM_TAKEAWAYS_TITLE = Your audience will leave with
+TOPIC_LVM_BEST_FOR = Managers, leaders, customer-facing teams
+TOPIC_LVM_BOTTOM_CTA = Bring Leadership vs. Management to your leaders.
+TOPIC_LVM_BOTTOM_BUTTON = Book this talk
+
+## TOPIC PAGE — NAVIGATING BURNOUT ([navigating-burnout.html](navigating-burnout.html))
+TOPIC_BURNOUT_EYEBROW = Keynote or workshop
+TOPIC_BURNOUT_H1 = Navigating Burnout
+TOPIC_BURNOUT_LEDE = A whole-person look at mental, physical, spiritual, and community health, drawn from the Choice Forward framework.
+TOPIC_BURNOUT_ABOUT_TITLE = About this talk
+TOPIC_BURNOUT_TAKEAWAYS_TITLE = Your audience will leave with
+TOPIC_BURNOUT_BEST_FOR = Wellness weeks, retreats, associations, healthcare teams
+TOPIC_BURNOUT_BOTTOM_CTA = Bring Navigating Burnout to your wellness program.
+TOPIC_BURNOUT_BOTTOM_BUTTON = Book this talk

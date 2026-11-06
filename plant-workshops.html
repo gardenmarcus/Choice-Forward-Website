@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Workshops with Garden Marcus | Choice Forward</title>
+  <meta name="description" content="Book hands-on plant workshops with Marcus Bridgewater (Garden Marcus) for team building, client events, schools, and community groups." />
+  <link rel="canonical" href="https://choiceforward.com/plant-workshops.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://choiceforward.com/plant-workshops.html" />
+  <meta property="og:title" content="Plant Workshops with Garden Marcus | Choice Forward" />
+  <meta property="og:description" content="Book hands-on plant workshops with Marcus Bridgewater (Garden Marcus) for team building, client events, schools, and community groups." />
+  <meta property="og:image" content="https://choiceforward.com/assets/images/hero/plant-workshop.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Plant Workshops with Garden Marcus | Choice Forward" />
+  <meta name="twitter:description" content="Book hands-on plant workshops with Marcus Bridgewater (Garden Marcus) for team building, client events, schools, and community groups." />
+  <meta name="twitter:image" content="https://choiceforward.com/assets/images/hero/plant-workshop.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/garden-marcus-logos/choice-forward-favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/garden-marcus-logos/choice-forward-favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --forest: #1f2937;
+      --forest-2: #2563eb;
+      --moss: #22c55e;
+      --leaf-dark: #166534;
+      --leaf-soft: #ecfdf3;
+      --cream: #f7f4ee;
+      --paper: #ffffff;
+      --clay: #dc2626;
+      --clay-dark: #b91c1c;
+      --ink: #111827;
+      --muted: #4b5563;
+      --line: #e5e7eb;
+      --radius: 14px;
+      --max: 1120px;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Inter", system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--cream); color: var(--ink); line-height: 1.6; }
+    a { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    h1, h2, h3 { font-family: var(--serif); line-height: 1.15; font-weight: 600; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, .92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav .wrap { min-height: 68px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: var(--serif); font-weight: 700; font-size: 1.25rem; text-decoration: none; color: var(--forest); }
+    .logo span { color: var(--clay); }
+    .nav ul { list-style: none; display: flex; align-items: center; gap: 22px; }
+    .nav ul a { text-decoration: none; color: var(--muted); font-size: .95rem; font-weight: 500; }
+    .nav ul a:hover,
+    .nav ul a.active { color: var(--forest); }
+    .nav .btn-primary { color: #ffffff; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .98rem;
+      border: 2px solid transparent;
+      transition: transform .15s ease, background .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: #2b6a4a; color: #fff; border-color: #2b6a4a; }
+    .btn-primary:hover { background: #23563d; border-color: #23563d; }
+    .btn-ghost { border-color: #2b6a4a; color: #2b6a4a; background: transparent; }
+
+    main { padding-bottom: 46px; }
+    section { padding: 52px 0; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .76rem;
+      font-weight: 600;
+      color: #7a5a34;
+      margin-bottom: 12px;
+    }
+
+    .hero { padding: 16px 0 0; }
+    .breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .87rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    .breadcrumb:hover { color: var(--forest-2); }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr .95fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .hero h1 { font-size: clamp(2.3rem, 5.2vw, 4rem); margin-bottom: 16px; letter-spacing: -.015em; }
+    .hero .lede { max-width: 620px; color: var(--muted); font-size: 1.08rem; margin-bottom: 22px; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-image {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #eadfce;
+      background: #efdfc8;
+      aspect-ratio: 4 / 3;
+    }
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+
+    .facts {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+      margin-top: 34px;
+    }
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 16px 0;
+    }
+    .fact small { display: block; color: #5f6e67; font-size: .76rem; margin-bottom: 2px; }
+    .fact strong { font-size: 1.03rem; line-height: 1.35; }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.3fr .9fr;
+      gap: 34px;
+      align-items: start;
+    }
+    h2 { font-size: clamp(2rem, 4vw, 3.1rem); margin-bottom: 16px; letter-spacing: -.01em; }
+    p + p { margin-top: 14px; }
+    .copy { color: var(--muted); font-size: 1.04rem; }
+    .panel {
+      background: var(--paper);
+      border: 1px solid #d6e0d7;
+      border-radius: var(--radius);
+      padding: 24px 24px 20px;
+    }
+    .panel h3 { font-size: 2.1rem; margin-bottom: 10px; }
+    .panel ul { padding-left: 18px; }
+    .panel li { margin: 8px 0; }
+
+    .quotes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+    .quote {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 220px;
+    }
+    .quote p { font-family: var(--serif); font-size: 1.12rem; line-height: 1.45; }
+    .quote cite { display: block; margin-top: 10px; color: #5f6e67; font-style: normal; font-size: .87rem; }
+
+    .faq {
+      max-width: 760px;
+      margin: 0 auto;
+      padding-top: 18px;
+    }
+    .faq h2 { text-align: center; margin-bottom: 16px; }
+    .faq-item {
+      border-top: 1px solid var(--line);
+      padding: 16px 0;
+    }
+    .faq-item:last-child { border-bottom: 1px solid var(--line); }
+    .faq-item h3 { font-size: 1rem; margin-bottom: 6px; }
+    .faq-item p { color: var(--muted); }
+
+    .cta {
+      margin-top: 32px;
+      background: #1f3026;
+      color: #f7f7f2;
+      border-radius: 0;
+    }
+    .cta .wrap {
+      padding: 36px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cta h2 { margin: 0; font-size: clamp(1.65rem, 4vw, 2.6rem); }
+
+    footer {
+      position: relative;
+      padding: 14px 0 20px;
+      font-size: .83rem;
+      color: #4f5d57;
+    }
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .footer-center-logo {
+      position: absolute;
+      left: 50%;
+      bottom: 4px;
+      transform: translateX(-50%);
+      display: block;
+      width: clamp(96px, 12vw, 150px);
+      height: auto;
+      opacity: .96;
+      pointer-events: none;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .split { grid-template-columns: 1fr; }
+      .facts-grid,
+      .quotes { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 740px) {
+      .nav ul li:nth-child(-n+3) { display: none; }
+      .facts-grid { grid-template-columns: 1fr; }
+      .footer-center-logo { width: 96px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Hands-on Plant Workshops by Garden Marcus",
+    "provider": {
+      "@type": "Organization",
+      "name": "Choice Forward",
+      "url": "https://choiceforward.com"
+    },
+    "serviceType": "Hands-on plant workshop",
+    "areaServed": "United States",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Companies, schools, libraries, civic groups"
+    },
+    "url": "https://choiceforward.com/plant-workshops.html",
+    "description": "Hands-on plant workshops led by Marcus Bridgewater (Garden Marcus) for teams and communities."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do we need to supply plants or soil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Materials kits can be provided, including plants, soil, and containers. We can also coordinate with your venue if you already have supplies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does anyone need gardening experience?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No prior gardening experience is required. Sessions are beginner-friendly and designed to welcome mixed experience levels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can it be added to a keynote?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every signature topic can be paired with a plant experience for a full-day event flow."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo">Choice<span>Forward</span></a>
+      <ul>
+        <li><a href="keynotes.html">Keynotes</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="plant-workshops.html" class="active">Plant Workshops</a></li>
+        <li><a href="index.html#topics">Topics</a></li>
+        <li><a href="book.html" class="btn btn-primary">Book Marcus</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Hands in the soil</p>
+            <h1>Hands-on plant workshops for teams, led by Garden Marcus</h1>
+            <p class="lede">Marcus leads your group through a hands-on plant experience. Everyone leaves with something living, and a lesson that grows with it.</p>
+            <div class="hero-ctas">
+              <a href="book.html" class="btn btn-primary">Book a plant workshop</a>
+              <a href="#session" class="btn btn-ghost">What happens in a session</a>
+            </div>
+          </div>
+          <figure class="hero-image">
+            <img src="assets/images/hero/plant-workshop.jpg" alt="Marcus Bridgewater leading a plant workshop with participants at tables" loading="eager" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="wrap facts-grid">
+          <div class="fact">
+            <small>Length</small>
+            <strong>60–90 minutes</strong>
+          </div>
+          <div class="fact">
+            <small>Materials</small>
+            <strong>Kits available</strong>
+          </div>
+          <div class="fact">
+            <small>Everyone leaves with</small>
+            <strong>A living plant</strong>
+          </div>
+          <div class="fact">
+            <small>Group size</small>
+            <strong>10-50</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="session">
+      <div class="wrap split">
+        <div>
+          <h2>Team building that grows after the event</h2>
+          <p class="copy">Plant workshops create an immediate shared experience: people get their hands in soil, slow down, and reconnect. Marcus guides the room with practical instruction and storytelling that makes each step meaningful and accessible.</p>
+          <p class="copy">Participants leave with a plant they cared for themselves and a simple framework they can apply to growth at work and at home.</p>
+          <p class="copy">If you are an event planner looking for team building activity, corporate wellness event, or a client appreciation event, Marcus is the guy for you. He will help your team reach your goals.</p>
+        </div>
+        <aside class="panel">
+          <h3>Best for</h3>
+          <ul>
+            <li>Team building and client events</li>
+            <li>Libraries, schools, and family programs</li>
+            <li>Community and civic gatherings</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="wrap">
+        <h2>What participants say</h2>
+        <div class="quotes">
+          <article class="quote">
+            <p>"By cultivating our own plants, we acquired essential gardening skills, and through this process we were reminded that we cannot force anything to grow."</p>
+            <cite>Maegan Morrow, Creative Arts Therapist, Center for Performing Arts Medicine at Houston Methodist</cite>
+          </article>
+          <article class="quote">
+            <p>"Marcus's personal story and philosophy of personal growth for the strengthening of our community resonate deeply for our times."</p>
+            <cite>Azura Hassan, participant, "Nurture Your Garden, Nurture Yourself" workshop</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="wrap faq">
+        <h2>Plant workshop FAQ</h2>
+        <article class="faq-item">
+          <h3>Do we need to supply plants or soil?</h3>
+          <p>No. Materials kits can be provided, including plants, soil, and containers. We can also coordinate with your venue if you already have supplies.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Does anyone need gardening experience?</h3>
+          <p>No prior gardening experience is required. Sessions are beginner-friendly and designed to welcome mixed experience levels.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Can it be added to a keynote?</h3>
+          <p>Yes. Every signature topic can be paired with a plant experience for a full-day event flow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2>Get your group's hands in the soil.</h2>
+        <a href="book.html" class="btn" style="background:#f3f4f1; color:#23342b;">Book a plant workshop</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Choice Forward LLC</span>
+      <a href="https://gardenmarcus.com" target="_blank" rel="noopener">Garden Marcus</a>
+    </div>
+    <img class="footer-center-logo" src="assets/images/garden-marcus-logos/Choice%20Forward%20Bottom%20Logo.svg" alt="Choice Forward logo" loading="lazy" />
+  </footer>
+</body>
+</html>
