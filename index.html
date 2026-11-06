@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Marcus Bridgewater | Choice Forward</title>
   <meta name="description" content="Keynotes, workshops, and hands-on plant workshops with Marcus Bridgewater (Garden Marcus), booked through Choice Forward." />
+  <link rel="canonical" href="https://choiceforward.com/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://choiceforward.com/index.html" />
+  <meta property="og:title" content="Book Marcus Bridgewater | Choice Forward" />
+  <meta property="og:description" content="Keynotes, workshops, and hands-on plant workshops with Marcus Bridgewater (Garden Marcus), booked through Choice Forward." />
+  <meta property="og:image" content="https://choiceforward.com/assets/images/hero/hero-6.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Book Marcus Bridgewater | Choice Forward" />
+  <meta name="twitter:description" content="Keynotes, workshops, and hands-on plant workshops with Marcus Bridgewater (Garden Marcus), booked through Choice Forward." />
+  <meta name="twitter:image" content="https://choiceforward.com/assets/images/hero/hero-6.jpg" />
   <link rel="icon" type="image/svg+xml" href="assets/images/garden-marcus-logos/choice-forward-favicon.svg" />
   <link rel="apple-touch-icon" href="assets/images/garden-marcus-logos/choice-forward-favicon.svg" />
 
@@ -203,6 +213,7 @@
     .card li::before { content: ""; position: absolute; left: 4px; top: 15px; width: 9px; height: 9px; border-radius: 50%; background: var(--moss); }
     .card .meta { font-size: .85rem; color: var(--muted); margin-bottom: 20px; }
     .card .btn { align-self: flex-start; }
+    .card .btn.center-cta { align-self: center; text-align: center; }
     .card.featured { background: var(--forest); color: var(--cream); border-color: var(--forest); }
     .card.featured h3 { color: var(--cream); }
     .card.featured p, .card.featured .meta { color: #d1d5db; }
@@ -425,6 +436,8 @@
     .topics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; margin-top: 40px; }
     .topic { padding: 26px 0; border-top: 1px solid var(--line); }
     .topic h3 { font-size: 1.3rem; margin-bottom: 6px; color: var(--forest); }
+    .topic h3 a { color: inherit; text-decoration: none; }
+    .topic h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .topic p { color: var(--muted); font-size: .98rem; }
     .topic .for { font-size: .8rem; font-weight: 600; color: var(--clay); margin-top: 8px; letter-spacing: .04em; }
 
@@ -536,6 +549,43 @@
     .book-cta-panel p { color: var(--muted); margin-bottom: 18px; }
     .book-cta-panel .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 
+    /* ---------- INTERNAL LINK MAP ---------- */
+    .link-map {
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .link-map-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .link-map-card {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .link-map-card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+      color: var(--forest);
+    }
+    .link-map-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 6px;
+    }
+    .link-map-card a {
+      text-decoration: none;
+      color: var(--forest-2);
+      font-size: .94rem;
+    }
+    .link-map-card a:hover { text-decoration: underline; }
+
     /* ---------- FOOTER ---------- */
     footer {
       position: relative;
@@ -566,6 +616,7 @@
       .cf-fw__chains { grid-template-columns: 1fr; }
       .aud-grid, .steps { grid-template-columns: repeat(2, 1fr); }
       .topics-grid { grid-template-columns: 1fr; }
+      .link-map-grid { grid-template-columns: 1fr; }
       .proof-item { min-width: 0; }
       .nav ul li:nth-child(-n+4) { display: none; }
     }
@@ -593,7 +644,7 @@
         <li><a href="#framework">Framework</a></li>
         <li><a href="#topics">Topics</a></li>
         <li><a href="#garden-marcus">Garden Marcus</a></li>
-        <li><a href="book.html">Speaking</a></li>
+        <li><a href="book.html">Book Marcus</a></li>
         <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
       </ul>
     </div>
@@ -605,23 +656,14 @@
       <div>
         <p class="eyebrow"><span class="hero-keynote">Keynotes &amp; Presentations</span> · <span class="hero-workshops">Workshops</span> · <span class="hero-plant">Plant Experiences</span></p>
         <h1>Bring <em>Garden Marcus</em> to your stage, your team, your community.</h1>
-        <p>Marcus Bridgewater, known to millions as Garden Marcus, uses the lessons of nature to share wisdom for life. With kindness, patience, and positivity, he speaks, teaches, and inspires organizations, large and intimate audiences, to get both their hands in their real and methaphorical soil and address their growth.</p>
+        <p>Marcus Bridgewater, known to millions as Garden Marcus, uses the lessons of nature to share wisdom for life. With kindness, patience, and positivity, he speaks, teaches, and inspires organizations, large and intimate audiences, to get both their hands in their real and metaphorical soil and address their growth.</p>
         <div class="ctas">
-          <a href="book.html" class="btn btn-primary">Check availability</a>
+          <a href="book.html" class="btn btn-primary">Book Marcus</a>
           <a href="#offers" class="btn btn-ghost">See ways to book</a>
         </div>
       </div>
       <div class="hero-carousel" aria-label="Photos of Marcus Bridgewater speaking">
         <img src="assets/images/hero/hero-6.jpg" alt="Marcus Bridgewater in a speaking moment" class="hero-slide active" loading="lazy" />
-        <img src="assets/images/hero/hero-3.jpg" alt="Marcus Bridgewater engaging with an audience" class="hero-slide" loading="lazy" />
-        <img src="assets/images/hero/hero-7.jpg" alt="Marcus Bridgewater with audience during a talk" class="hero-slide" loading="lazy" />
-        <img src="assets/images/hero/hero-8.jpg" alt="Marcus Bridgewater portrait" class="hero-slide hero-slide-portrait" loading="lazy" />
-        <div class="hero-dots" aria-label="Choose hero photo">
-          <button type="button" class="hero-dot active" aria-label="Show photo 1"></button>
-          <button type="button" class="hero-dot" aria-label="Show photo 2"></button>
-          <button type="button" class="hero-dot" aria-label="Show photo 3"></button>
-          <button type="button" class="hero-dot" aria-label="Show photo 4"></button>
-        </div>
       </div>
     </div>
   </header>
@@ -708,7 +750,7 @@
             <li>Commencements and galas</li>
           </ul>
           <p class="meta">30–60 minutes · In person or virtual · Q&amp;A available</p>
-          <a href="book.html" class="btn btn-primary">Request a keynote</a>
+          <a href="keynotes.html" class="btn btn-primary">Request a keynote</a>
         </article>
 
         <!-- Presentations / workshops -->
@@ -722,7 +764,7 @@
             <li>Breakouts and panel sessions</li>
           </ul>
           <p class="meta">60–120 minutes · Workbook included</p>
-          <a href="book.html" class="btn btn-ghost">Plan a workshop</a>
+          <a href="workshops.html" class="btn btn-ghost center-cta">View workshop details</a>
         </article>
 
         <!-- Plant workshops -->
@@ -736,7 +778,7 @@
             <li>Community and civic gatherings</li>
           </ul>
           <p class="meta">60–90 minutes · Materials kits available</p>
-          <a href="book.html" class="btn btn-ghost">Book a plant workshop</a>
+          <a href="plant-workshops.html" class="btn btn-ghost center-cta">View plant workshop details</a>
         </article>
       </div>
     </div>
@@ -756,9 +798,9 @@
       <div class="cf-fw__chains">
         <article class="cf-fw__chain">
           <p class="cf-fw__num">Chain 1</p>
-          <h3 class="cf-fw__words">Mental Health<span>·</span>Physical Fitness<span>·</span>Spirital Awareness</h3>
+          <h3 class="cf-fw__words">Mental Health<span>·</span>Physical Fitness<span>·</span>Spiritual Awareness</h3>
           <p class="cf-fw__desc">
-            The chain that help us understand ourselves, our hobbies, habits and routines. It's where every talk,
+            The chain that helps us understand ourselves, our hobbies, habits, and routines. It's where every talk,
             workshop, and cohort begins.
           </p>
         </article>
@@ -767,7 +809,7 @@
           <p class="cf-fw__num">Chain 2</p>
           <h3 class="cf-fw__words">Kindness<span>·</span>Patience<span>·</span>Positivity</h3>
           <p class="cf-fw__desc">
-            The chain that shapes how we treat ourselves and each other. It's where we chanllege our attitude, discipline, and resilence.
+            The chain that shapes how we treat ourselves and each other. It's where we challenge our attitude, discipline, and resilience.
           </p>
         </article>
 
@@ -775,7 +817,7 @@
           <p class="cf-fw__num">Chain 3</p>
           <h3 class="cf-fw__words">Purpose<span>·</span>Drive<span>·</span>Impact</h3>
           <p class="cf-fw__desc">
-            The chain for what we build, how we sustain it, and what we leave behind. It's where we address our choices and their alignment to our communities needs and wants.
+            The chain for what we build, how we sustain it, and what we leave behind. It's where we address our choices and their alignment to our community's needs and wants.
           </p>
         </article>
       </div>
@@ -816,22 +858,22 @@
 
       <div class="topics-grid">
         <div class="topic">
-          <h3>Growth Can't Be Forced</h3>
+          <h3><a href="growth-cant-be-forced.html">Growth Can't Be Forced</a></h3>
           <p>Marcus’s signature talk. A garden taught him that you can’t force anything to grow, but you can tend the conditions that let it thrive. Through his own story, he shows audiences how to tend their roots, one choice at a time.</p>
           <p class="for">Best for: conferences, kickoffs, education audiences</p>
         </div>
         <div class="topic">
-          <h3>Kindness, Patience, Positivity</h3>
+          <h3><a href="kindness-patience-positivity.html">Kindness, Patience, Positivity</a></h3>
           <p>The everyday chain of choices that shapes how we treat ourselves and each other, and how to strengthen it under pressure.</p>
           <p class="for">Best for: teams, wellbeing programs</p>
         </div>
         <div class="topic">
-          <h3>Leadership vs. Management</h3>
+          <h3><a href="leadership-vs-management.html">Leadership vs. Management</a></h3>
           <p>Managing is about handling what happens. Leading is about choosing how you show up when it does. Marcus shows how to be the calm, proactive presence in a hard exchange, set boundaries that actually hold, and build the communication and community a team can grow in.</p>
           <p class="for">Best for: managers, leaders, customer-facing teams</p>
         </div>
         <div class="topic">
-          <h3>Navigating Burnout</h3>
+          <h3><a href="navigating-burnout.html">Navigating Burnout</a></h3>
           <p>A whole-person look at mental, physical, spiritual, and community health, drawn from the Choice Forward framework.</p>
           <p class="for">Best for: wellness weeks, retreats, associations</p>
         </div>
@@ -937,14 +979,43 @@
     </div>
   </section>
 
+  <!-- ===================== INTERNAL LINK MAP ===================== -->
+  <section class="link-map" aria-labelledby="internal-link-map-title">
+    <div class="wrap">
+      <p class="eyebrow">Explore all speaking pages</p>
+      <h2 id="internal-link-map-title">Speaking page map</h2>
+      <div class="link-map-grid">
+        <article class="link-map-card">
+          <h3>Formats</h3>
+          <ul>
+            <li><a href="keynotes.html">Keynotes &amp; Presentations</a></li>
+            <li><a href="workshops.html">Team Workshops</a></li>
+            <li><a href="plant-workshops.html">Plant Workshops</a></li>
+            <li><a href="book.html">Book Marcus</a></li>
+          </ul>
+        </article>
+        <article class="link-map-card">
+          <h3>Signature topics</h3>
+          <ul>
+            <li><a href="growth-cant-be-forced.html">Growth Can't Be Forced</a></li>
+            <li><a href="kindness-patience-positivity.html">Kindness, Patience, Positivity</a></li>
+            <li><a href="leadership-vs-management.html">Leadership vs. Management</a></li>
+            <li><a href="navigating-burnout.html">Navigating Burnout</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== FOOTER ===================== -->
   <footer>
     <div class="wrap">
       <span>© 2026 Choice Forward LLC</span>
       <span>
         <a href="https://gardenmarcus.com" target="_blank" rel="noopener">Garden Marcus</a>
+        <a href="keynotes.html">Keynotes</a>
         <a href="#offers">Ways to book</a>
-        <a href="book.html">Speaking</a>
+        <a href="book.html">Book Marcus</a>
         <a href="contact.html">Contact</a>
       </span>
     </div>

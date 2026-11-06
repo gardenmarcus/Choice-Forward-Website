@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://choiceforward.com/sitemap.xml
