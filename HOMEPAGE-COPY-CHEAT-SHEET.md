@@ -51,7 +51,7 @@ KEYNOTE_BULLET_1 = Conferences and annual meetings
 KEYNOTE_BULLET_2 = Company all-hands and kickoffs
 KEYNOTE_BULLET_3 = Commencements and galas
 KEYNOTE_META = 30–60 minutes · In person or virtual · Q&A available
-KEYNOTE_CTA = View keynote details
+KEYNOTE_CTA = View Keynote Details
 
 ### Card 2 — Workshops
 WORKSHOP_TAG = Choice Forward framework
